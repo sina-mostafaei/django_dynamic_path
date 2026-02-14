@@ -26,7 +26,7 @@ def reporter(r, id):
         return HttpResponseNotFound("item not found")
 
 
-def mamad(request, text):
+def t_rep(request, text):
     if text in texts:
         return HttpResponseRedirect(f"/product/{str(texts[text])}/")
     return HttpResponseNotFound("item not found")
